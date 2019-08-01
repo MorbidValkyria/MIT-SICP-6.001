@@ -102,7 +102,7 @@ SQUARE ;; -> COMPOUND PROCEDURE SQUARE
     (< (abs (- (square guess) x))
        .001))
   (define (try guess)
-    (if (good-enogh? guess)
+    (if (good-enough? guess)
        guess
        (try (improve guess))))
   (try 1))
